@@ -1,0 +1,9 @@
+form {
+    border: solid 5px black;
+}
+
+.form--heading, 
+.form--text {
+    display: inline-block;
+}
+

@@ -1,10 +1,10 @@
-const contactCollection = require("./contactCollection")
-const contactForm = require("./contactForm.js")
+const contact = require("./contact")
+const contactForm = require("./contactForm")
 
 
 contactForm.makeSearchForm()
 contactForm.newContactForm()
-contactCollection.displayAllContacts()
+contact.displayAllContacts()
 
 
 

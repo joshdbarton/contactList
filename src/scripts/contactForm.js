@@ -1,11 +1,11 @@
-const DOMcomponents = require("./DOMcomponents.js")
-const contactCollection = require("./contactCollection.js")
-const contact = require("./contact.js")
+const DOMcomponents = require("./DOMcomponents")
+const contactCollection = require("./contactCollection")
+const contact = require("./contact")
 const searchContacts = contact.searchContacts
 const displayContactCard = contact.displayContactCard
 const createComponent = DOMcomponents.createComponent
 const contactViewer = contact.contactViewer
-const displayAllContacts = contactCollection.displayAllContacts
+const displayAllContacts = contact.displayAllContacts
 const newContact = contactCollection.newContact
 
 

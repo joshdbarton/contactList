@@ -46,8 +46,6 @@ const newContact = (first, last, phone, street, cityState, ZIP) => {
 }
 
 
-displayAllContacts = () => {
-        contacts.forEach( contact => {displayContactCard(contact.ID)})
-}
 
-module.exports = {newContact, saveDB, contacts, displayAllContacts}
+
+module.exports = {newContact, saveDB, contacts}

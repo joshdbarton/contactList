@@ -5,4 +5,5 @@ const createComponent = (tag, classList, content) => {
     return component
 }
 
+
 module.exports = {createComponent}

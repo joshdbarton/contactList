@@ -1,5 +1,5 @@
 const contactCollection = require("./contactCollection")
-const DOMcomponents = require("./DOMcomponents.js")
+const DOMcomponents = require("./DOMcomponents")
 const contacts = contactCollection.contacts
 const createComponent = DOMcomponents.createComponent
 
@@ -19,5 +19,8 @@ const displayContactCard = (ID) => {
     contactViewer.appendChild(section)
 }
 
+displayAllContacts = () => {
+    contacts.forEach( contact => {displayContactCard(contact.ID)})
+}
 
-module.exports = {displayContactCard, searchContacts, contactViewer}
+module.exports = {displayContactCard, displayAllContacts, searchContacts, contactViewer}
