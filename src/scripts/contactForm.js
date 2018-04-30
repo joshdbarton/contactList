@@ -27,12 +27,11 @@ const makeSearchForm = () => {
     submitButton.setAttribute("value", "Search")
     submitButton.addEventListener("click", () => {
         contactViewer.innerHTML = ""
-        searchContacts(searchByField.value, searchTextField.value).forEach( (ID) => {
-            displayContactCard(ID)
-        })
+        const results = searchContacts(searchByField.value, searchText.value)
+        displayAllContacts(results)
     })
     form.appendChild(submitButton)
-    document.querySelector("body").insertBefore(form, this.firstChild);
+    document.querySelector("#searchBar").appendChild(form)
 }
 
 const newContactForm = () => {
@@ -78,7 +77,7 @@ const newContactForm = () => {
         alert(`Added ${firstName.value} to Contacts!`)
         })
     form.appendChild(submitButton)
-    document.querySelector("body").insertBefore(form, this.firstChild);
+    document.querySelector("#searchBar").appendChild(form)
 }
 
 module.exports = {makeSearchForm, newContactForm}

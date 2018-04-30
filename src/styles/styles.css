@@ -7,3 +7,11 @@ form {
     display: inline-block;
 }
 
+.contact {
+    border: dotted 3px black;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+
