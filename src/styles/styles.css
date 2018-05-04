@@ -1,14 +1,38 @@
 form {
-    border: solid 5px black;
+    border: solid 5px tomato;
+    background-color: lightpink;
+    padding:3px;
+    margin-right: 3px;
 }
 
 .form--heading, 
 .form--text {
     display: inline-block;
+    margin-right: 3px;
+}
+
+.form--heading {
+    color: white;
+    font-weight: 300;
+}
+
+#viewer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+
+}
+
+#searchBar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
 }
 
 .contact {
-    border: dotted 3px black;
+    border: solid 3px cyan;
+    background-color: lightcyan;
+    border-radius: 3px;
     padding: 5px;
     margin-bottom: 5px;
 }

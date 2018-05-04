@@ -1,5 +1,3 @@
-
-
 const Contacts = Object.create({}, {
         contacts: {
                 writable: true,
