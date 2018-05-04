@@ -1,11 +1,14 @@
-const contact = require("./contact")
-const contactForm = require("./contactForm")
-const contactCollection = require("./contactCollection")
+const Display = require("./contact")
+const Forms = require("./contactForm")
+const Contacts = require("./contactCollection")
 
 
-contactForm.makeSearchForm()
-contactForm.newContactForm()
-contact.displayAllContacts(contactCollection.contacts)
+Forms.newContactForm()
+Forms.newSearchForm()
+if (localStorage.getItem("contacts") !== null)  {
+    Contacts.contacts = Contacts.load()
+}
+Display.allContacts(Contacts.contacts)
 
 
 
